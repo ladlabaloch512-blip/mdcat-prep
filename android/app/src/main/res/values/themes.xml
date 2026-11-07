@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. All visible colours come from the runtime
+         ThemeSpec engine (see Theme.kt); this only sets a neutral window. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:statusBarColor">#0B5ED7</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+</resources>
