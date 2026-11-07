@@ -1,0 +1,10 @@
+# MDCAT Prep - shared hosting rules
+Options -Indexes
+
+# Never serve the config file or SQL files directly.
+<FilesMatch "(config\.php|config\.sample\.php|\.sql)$">
+    Require all denied
+</FilesMatch>
+
+# Pretty API URLs are optional; the app and website use api/index.php?r=...
+# so no rewrite rules are required for the API to work.
