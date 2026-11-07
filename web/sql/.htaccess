@@ -1,0 +1,3 @@
+# SQL files hold the database schema and demo seed data.
+# They are never served over the web.
+Require all denied
