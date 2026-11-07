@@ -1,0 +1,54 @@
+/* MDCAT Prep admin panel styles (shared by all admin pages). */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, Arial, sans-serif; background: #f4f6f8; color: #17251d; }
+a { color: #0a7a43; }
+.layout { display: flex; min-height: 100vh; }
+.side { width: 230px; background: #0d3524; color: #dcefe4; padding: 20px 14px; display: flex; flex-direction: column; gap: 4px; flex-shrink: 0; }
+.side .brand { font-size: 20px; font-weight: 800; color: #fff; margin-bottom: 18px; }
+.side .brand span { display: block; font-size: 12px; font-weight: 500; color: #9fd4b6; margin-top: 2px; }
+.side a { color: #dcefe4; text-decoration: none; padding: 9px 10px; border-radius: 8px; font-size: 14px; }
+.side a:hover { background: #14532d; }
+.side a.active { background: #16a34a; color: #fff; }
+.side a.logout { margin-top: auto; color: #f3b8b8; }
+.main { flex: 1; padding: 24px 28px; max-width: 1100px; }
+h1 { font-size: 24px; margin: 0 0 16px; }
+h2 { font-size: 18px; margin: 26px 0 10px; }
+.muted { color: #5c6f64; font-size: 14px; }
+.flash { background: #e3f6ea; border: 1px solid #9fd4b6; padding: 10px 14px; border-radius: 8px; margin-bottom: 16px; }
+.error { background: #fde8e8; border: 1px solid #f0b4b4; padding: 10px 14px; border-radius: 8px; margin-bottom: 12px; }
+.cards { display: flex; flex-wrap: wrap; gap: 12px; }
+.stat { background: #fff; border: 1px solid #dde5df; border-radius: 12px; padding: 16px 20px; min-width: 130px; }
+.stat strong { display: block; font-size: 26px; }
+.stat span { color: #5c6f64; font-size: 13px; }
+table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #dde5df; border-radius: 12px; overflow: hidden; margin-top: 12px; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #edf1ee; font-size: 14px; vertical-align: middle; }
+th { background: #eef4f0; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: #40534a; }
+td.actions { white-space: nowrap; }
+.btn { display: inline-block; background: #e7efe9; color: #17251d; border: 1px solid #cfdccf; padding: 8px 14px; border-radius: 8px; text-decoration: none; font-size: 14px; cursor: pointer; }
+.btn.primary { background: #16a34a; border-color: #16a34a; color: #fff; }
+.btn.danger { background: #fde8e8; border-color: #f0b4b4; color: #8c1d1d; }
+.btn.small { padding: 5px 10px; font-size: 13px; }
+.btn.wide { width: 100%; }
+form.inline { display: inline; }
+.form-card { background: #fff; border: 1px solid #dde5df; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 12px; max-width: 560px; margin-bottom: 20px; }
+.form-card.wide { max-width: 760px; }
+.form-card label { display: flex; flex-direction: column; gap: 5px; font-size: 13px; font-weight: 600; color: #40534a; }
+.form-card label.check { flex-direction: row; align-items: center; gap: 8px; }
+.form-card input, .form-card select, .form-card textarea { padding: 9px 10px; border: 1px solid #c8d4cc; border-radius: 8px; font-size: 14px; font-family: inherit; font-weight: 400; color: #17251d; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.filter-row { margin: 6px 0; }
+.filter-row select { padding: 8px; border-radius: 8px; border: 1px solid #c8d4cc; }
+.banner-thumb { width: 120px; height: 36px; object-fit: cover; border-radius: 6px; border: 1px solid #dde5df; }
+.banner-preview { max-width: 100%; border-radius: 8px; border: 1px solid #dde5df; }
+.login-body { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #0d3524; }
+.login-card { background: #fff; border-radius: 16px; padding: 28px; width: 340px; display: flex; flex-direction: column; gap: 12px; }
+.login-card h1 { margin: 0; font-size: 22px; }
+.login-card label { display: flex; flex-direction: column; gap: 5px; font-size: 13px; font-weight: 600; color: #40534a; }
+.login-card input { padding: 10px; border: 1px solid #c8d4cc; border-radius: 8px; font-size: 14px; }
+@media (max-width: 800px) {
+    .layout { flex-direction: column; }
+    .side { width: 100%; flex-direction: row; flex-wrap: wrap; align-items: center; }
+    .side .brand { margin-bottom: 0; margin-right: 12px; }
+    .main { padding: 16px; }
+    .grid2 { grid-template-columns: 1fr; }
+}
